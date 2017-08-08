@@ -1,0 +1,20 @@
+{
+    "name": "id.bpddiy.divtiojt2.mbranch",
+    "version": "1.0.0",
+    "displayName": "mbranch",
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "^6.2.2",
+        "cordova-plugin-whitelist": "1"
+    },
+    "devDependencies": {
+        "gradle": "^1.0.7"
+    }
+}
