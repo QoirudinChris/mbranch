@@ -76,7 +76,7 @@
             </div>
             <div class="col s6">
                 <div class="card light-green">
-                    <a href="#">
+                    <a href="#pagepenggantianatm">
                     <div class="card-content white-text">
                         <span class="card-title2">Penggantian Kartu ATM</span>
                         <i class="medium2 material-icons centered">payment</i>
@@ -86,7 +86,7 @@
             </div>
             <div class="col s6">
                 <div class="card light-blue darken-4">
-                    <a href="#">
+                    <a href="#pagepembukaanblokir">
                     <div class="card-content white-text">
                         <span class="card-title2">Pembukaan Blokir</span>
                         <i class="medium2 material-icons centered">lock_open</i>
@@ -509,7 +509,7 @@
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
           <a  href="#" class="brand-logo">MBranch</a>
-          <a href="#pageform6" class="a-custom"><i class="material-icons">arrow_back</i></a>
+          <a href="#pageform5" class="a-custom"><i class="material-icons">arrow_back</i></a>
         </div>
     </nav>
     
@@ -617,12 +617,12 @@
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
           <a  href="#" class="brand-logo">MBranch</a>
-          <a href="#pageform7" class="a-custom"><i class="material-icons">arrow_back</i></a>
+          <a href="#pagecustservice" class="a-custom"><i class="material-icons">arrow_back</i></a>
         </div>
     </nav>
     
     <div class="container">
-        <blockquote>e-Form Pembukaan Rekening</blockquote> 
+        <blockquote>Nomor Referensi</blockquote> 
         <div class="row">
             <div class="col s1"></div>
             <div class="col s1"><a class="btn-floating disabled light-green"><i class="material-icons">done</i></a></div>
@@ -642,7 +642,7 @@
                 <div class="red-text customh5"><b><u>3495SDFJK32</u></b></div>
             </div>
         </div>
-        <div class="customh6">Anda dapat menyimpan No. Referensi ke Gallery. Gunakan No. Referensi untuk Validasi Data ke CUstomer Service. Silahkan menuju ke menu Reservasi Customer Service untuk membuat jadwal dengan Customer Service Kami.</div> <br>
+        <div class="customh6">Anda dapat menyimpan No. Referensi ke Gallery. Gunakan No. Referensi untuk Validasi Data ke Customer Service. Silahkan menuju ke menu Reservasi Customer Service untuk membuat jadwal dengan Customer Service Kami.</div> <br>
     </div>
         <footer class="page-footer">
             <div class="container">
@@ -728,6 +728,272 @@
         </footer>
 </div>
 
+<!-- === PAGE PENGGANTIAN KARTU ATM === -->
+<div data-role="page" id="pagepenggantianatm">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a  href="#" class="brand-logo">MBranch</a>
+          <a href="#pagecustservice" class="a-custom"><i class="material-icons">arrow_back</i></a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <blockquote>e-Form Penggantian Kartu ATM</blockquote> 
+        
+
+        <label>Permohonan Penggantian</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">Kartu Hilang</option>
+            <option value="2">Kartu Rusak</option>
+            <option value="3">Ganti Pin</option>
+            <option value="4">Perubahan Data</option>
+        </select>
+
+        <div class="input-field">
+            <input id="nama_lengkap" type="text" data-role="none">
+            <label for="nama_lengkap" class="" data-role="none">Nama Lengkap</label>
+        </div>
+        <div class="input-field">
+            <input id="tempat_lahir" type="text" data-role="none">
+            <label for="tempat_lahir" class="" data-role="none">Tempat Lahir</label>
+        </div>
+        <div class="input-field">
+            <input id="tanggal_lahir" type="date" class="datepicker" data-role="none">
+            <label for="tanggal_lahir" class="active" data-role="none">Tanggal Lahir</label>       
+        </div>
+        <div class="input-field">
+          <textarea id="alamat_tinggal" class="materialize-textarea" data-role="none"></textarea>
+          <label for="alamat_tinggal">Alamat Tempat Tinggal</label>
+        </div>
+        <div class="input-field">
+            <input id="nama_ibu" type="text" data-role="none">
+            <label for="nama_ibu" class="" data-role="none">Nama Gadis Ibu Kandung</label>
+        </div>
+    </div>
+        <footer class="page-footer">
+            <div class="container">
+              <a class="waves-effect waves-light btn-large" href="#pagepenggantianatm2"><i class="material-icons left">navigate_next</i>Lanjutkan</a>  
+            </div>
+        </footer>
+</div>
+
+<!-- === PAGE PENGGANTIAN KARTU ATM #2 === -->
+<div data-role="page" id="pagepenggantianatm2">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a  href="#" class="brand-logo">MBranch</a>
+          <a href="#pagepenggantianatm" class="a-custom"><i class="material-icons">arrow_back</i></a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <blockquote>e-Form Penggantian Kartu ATM</blockquote>         
+        <div class="input-field">
+            <input id="no_hp" type="number" data-role="none">
+            <label for="no_hp" class="" data-role="none">Nomor Handphone</label>
+        </div>
+        <label>Kartu Identitas</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">KTP</option>
+            <option value="2">SIM</option>
+            <option value="3">Passport</option>
+        </select>
+        <div class="input-field">
+            <input id="no_iden" type="text" data-role="none">
+            <label for="no_iden" class="" data-role="none">Nomor Identitas</label>
+        </div>
+        <label>Tipe Kartu ATM</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">Regular</option>
+            <option value="2">Instan</option>
+        </select>
+        <label>Jenis Kartu</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">Silver</option>
+            <option value="2">Gold</option>
+            <option value="3">Platinum</option>
+        </select>
+        <label>Jenis Rekening</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">Single Account</option>
+            <option value="2">Multi Account</option>
+        </select>
+    </div>
+        <footer class="page-footer">
+            <div class="container">
+              <a class="waves-effect waves-light btn-large" href="#pagepenggantianatm3"><i class="material-icons left">navigate_next</i>Lanjutkan</a>  
+            </div>
+        </footer>
+</div>
+
+<!-- === PAGE PENGGANTIAN KARTU ATM #3 === -->
+<div data-role="page" id="pagepenggantianatm3">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a  href="#" class="brand-logo">MBranch</a>
+          <a href="#pagepenggantianatm2" class="a-custom"><i class="material-icons">arrow_back</i></a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <blockquote>e-Form Penggantian Kartu ATM</blockquote>         
+        <label>Rekening</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">Simpeda</option>
+            <option value="2">Sutera</option>
+        </select>
+        <div class="input-field">
+            <input id="no_rek" type="text" data-role="none">
+            <label for="no_rek" class="" data-role="none">Nomor Rekening</label>
+        </div>
+        <div class="input-field">
+            <input id="no_rek_utama" type="text" data-role="none">
+            <label for="no_rek_utama" class="" data-role="none">Nomor Rekening Utama (utk Multi Account)</label>
+        </div>
+        <div class="customh6 red-text">NB : <br>Harap membawa Fotocopy KTP dan KTP Asli Saat Akan Datang ke Customer Service.</div> <br>
+    </div>
+        <footer class="page-footer">
+            <div class="container">
+              <a class="waves-effect waves-light btn-large" href="#pageformend"><i class="material-icons left">navigate_next</i>Lanjutkan</a>  
+            </div>
+        </footer>
+</div>
+
+<!-- === PAGE PEMBUKAAN BLOKIR === -->
+<div data-role="page" id="pagepembukaanblokir">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a  href="#" class="brand-logo">MBranch</a>
+          <a href="#pagecustservice" class="a-custom"><i class="material-icons">arrow_back</i></a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <blockquote>e-Form Pembukaan Blokir Kartu ATM</blockquote> 
+        
+        <div class="input-field">
+            <input id="nama_lengkap" type="text" data-role="none">
+            <label for="nama_lengkap" class="" data-role="none">Nama Lengkap</label>
+        </div>
+        <div class="input-field">
+          <textarea id="alamat_lengkap" class="materialize-textarea" data-role="none"></textarea>
+          <label for="alamat_lengkap">Alamat Lengkap</label>
+        </div>
+        <div class="input-field">
+            <input id="no_hp" type="number" data-role="none">
+            <label for="no_hp" class="" data-role="none">Nomor Handphone</label>
+        </div>
+        <label>Kartu Identitas</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">KTP</option>
+            <option value="2">SIM</option>
+            <option value="3">Passport</option>
+        </select>
+        <div class="input-field">
+            <input id="no_iden" type="number" data-role="none">
+            <label for="no_iden" class="" data-role="none">Nomor Identitas</label>
+        </div>
+        <div class="input-field">
+            <input id="no_rek" type="number" data-role="none">
+            <label for="no_rek" class="" data-role="none">Nomor Rekening</label>
+        </div>
+        <div class="input-field">
+            <input id="no_kartu" type="number" data-role="none">
+            <label for="no_kartu" class="" data-role="none">Nomor Kartu ATM</label>
+        </div>
+        
+    </div>
+        <footer class="page-footer">
+            <div class="container">
+              <a class="waves-effect waves-light btn-large" href="#pagepembukaanblokir2"><i class="material-icons left">navigate_next</i>Lanjutkan</a>  
+            </div>
+        </footer>
+</div>
+
+<!-- === PAGE PEMBUKAAN BLOKIR #2 === -->
+<div data-role="page" id="pagepembukaanblokir2">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a  href="#" class="brand-logo">MBranch</a>
+          <a href="#pagepembukaanblokir" class="a-custom"><i class="material-icons">arrow_back</i></a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <blockquote>e-Form Pembukaan Blokir Kartu ATM</blockquote> 
+        <label>Permintaan</label>
+        <select class="browser-default" data-role="none">
+            <option value="" disabled selected>Pilih salah satu</option>
+            <option value="1">Blokir Karena Kartu Hilang</option>
+            <option value="2">Buka Blokir Karena Melebihi Maks. Kesalahan PIN</option>
+        </select>
+        <br>
+        <label>Tanggal Transaksi</label>
+        <div class="input-field">
+            <input type="date" class="datepicker"  data-role="none">  
+        </div>
+        <br>
+        <label>Jam</label>
+        <div class="row">
+            <div class="col s6">
+                <select class="browser-default" data-role="none">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                </select>
+            </div>
+            <div class="col s6">
+                <select class="browser-default" data-role="none">
+                    <option value="00">00</option>
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                </select>
+            </div>
+        </div>
+        <div class="customh6 red-text">NB : <br>Harap membawa Fotocopy KTP dan KTP Asli Saat Akan Datang ke Customer Service.</div> <br>
+    </div>
+        <footer class="page-footer">
+            <div class="container">
+              <a class="waves-effect waves-light btn-large" href="#pageformend"><i class="material-icons left">navigate_next</i>Lanjutkan</a>  
+            </div>
+        </footer>
+</div>
 
 <!-- === SCRIPTS === -->
 <script type="text/javascript" src="cordova.js"></script>
